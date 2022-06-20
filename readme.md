@@ -1,1 +1,1 @@
-hello
+This is a frontend project build using HTML, CSS and JavaScript.
