@@ -7,7 +7,7 @@
 }
 
 .container{
-    background-color: #151728;
+    background-color: #181923;
     height: 100vh;
     width: 100%;
 }
@@ -31,6 +31,8 @@
     width: calc(100% - 5.3125rem);
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 0;
 }
 
 .nav{
@@ -40,19 +42,28 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2.5rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 #logo{
     color: #fff;
     font-weight: 600;
     font-size: xx-large;
-    text-shadow: 0 0.15625rem 0.5rem #a0befa;
+    text-shadow: 0 0.15625rem 0.7rem #70a0ff;
+    cursor: pointer;
 }
 
 .category{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
+    width: 80rem;
 }
 
 .opt{
@@ -61,6 +72,14 @@
     color: #fff;
     font-weight: 500;
     padding: 2.5rem;
+}
+
+.opt:hover{
+    color: #70a0ff;
+}
+
+.opt:active{
+    color: #70a0ff;
 }
 
 .icons{
@@ -73,11 +92,70 @@
     width: 1.25rem;
     height: 1.25rem;
     padding: .5rem;
-    margin-right: .5rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+    height: 100vh;
+    border-right: .25px solid hsla(231, 6%, 47%, 0.253);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ham{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.wrapper{
+    border-bottom: 1px solid hsla(233, 7%, 54%, 0.507);
+    padding: 2.25rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.btn1{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 2.625rem;
     cursor: pointer;
 }
 
 .feed{
     height: calc(100vh - 5.25rem);
     padding: 0 2.5rem 0 2.5rem;
+    overflow: auto;
+    position: absolute;
+    top: 5.25rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.title{
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 1.25rem;
 }
