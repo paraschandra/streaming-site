@@ -24,6 +24,7 @@
     width: 5.3125rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .right{
@@ -31,8 +32,8 @@
     width: calc(100% - 5.3125rem);
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
-    z-index: 0;
 }
 
 .nav{
@@ -45,9 +46,13 @@
     position: absolute;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2000;
     overflow-x: auto;
     overflow-y: hidden;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(24, 25, 35, 0.95);
+    
 }
 
 #logo{
@@ -143,14 +148,14 @@
 }
 
 .feed{
-    height: calc(100vh - 5.25rem);
+    height: 100vh;
     padding: 0 2.5rem 0 2.5rem;
     overflow: auto;
-    position: absolute;
-    top: 5.25rem;
+    position: relative;
+    padding-top: 5.25rem;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 0;
 }
 
 .title{
