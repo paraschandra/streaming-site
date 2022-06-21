@@ -235,7 +235,6 @@ h2{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    /* overflow-y: hidden; */
     scrollbar-width: none;
 }
 
