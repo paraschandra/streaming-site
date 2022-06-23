@@ -289,3 +289,16 @@ h2{
     font-style: normal;
     padding: 0 0.1875rem;
 }
+
+.anime{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.row{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+}
