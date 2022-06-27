@@ -168,6 +168,7 @@
     font-weight: 600;
     color: #fff;
     padding-bottom: 1.25rem;
+    margin: .67em 0;
 }
 
 .banner{
@@ -301,4 +302,49 @@ h2{
     display: flex;
     flex-wrap: wrap;
     scrollbar-width: none;
+}
+
+.tabs{
+    line-height: 2;
+    margin: -1.25rem 0 -625rem;
+}
+
+.tabs ul{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tabs ul li{
+    display: inline-block;
+    margin-top: .25rem;
+    margin-right: .25rem;
+}
+
+.tabs .tablink{
+    background-color: hsla(0,0%,100%,.1);
+    border-radius: .375rem;
+    box-shadow: 0 .25rem .375rem -.0625rem rgba(0,0,0,.1),0 .125rem .25rem -.125rem rgba(0,0,0,.1);
+    color: inherit;
+    cursor: pointer;
+    font-size: .75rem;
+    padding: .5rem .625rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tablink.active{
+    background-color: #fff;
+    color: #2f2f33;
+}
+
+.poster-grid{
+    grid-gap: 1.25rem 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(10.3125rem,1fr));
+    margin-top: 44rem;
+}
+
+.grid{
+    height: 100vh;
 }
